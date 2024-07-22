@@ -5,6 +5,18 @@ const mysql = require("mysql");
 const app = express();
 const port = 3001;
 const path = require("path");
+
+const buildPath = path.join(__dirname, "../../build");
+
+app.use(express.static(buildPath));
+
+app.get("/*", (req, res) => {
+  res.sendFile(path.join(__dirname, "../../build/index.html"), function (err) {
+    if (err) {
+      res.status(500).send(err);
+    }
+  });
+});
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
