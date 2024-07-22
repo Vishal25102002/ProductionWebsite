@@ -1,25 +1,57 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Routes, Route, useLocation } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Header from "./components/Header";
+import About from "./components/About";
+import Product from "./components/Product";
+import Contact from "./components/Contact";
+import AdminLogin from "./components/AdminLogin";
+import Dashboard from "./components/Dashboard"; // Import the Dashboard component
+import { AnimatePresence } from "framer-motion";
+import Machine from "./components/Machine";
+import Footer from "./components/Footer";
 
-function App() {
+const App = () => {
+  const location = useLocation();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {location.pathname !== "/adminlogin" && <Navbar /> &&
+        location.pathname !== "/dashboard"}
+
+      <AnimatePresence mode="wait">
+        <Routes location={location} key={location.pathname}>
+          <Route
+            path="/"
+            element={
+              <>
+                <div id="home">
+                  <Header />
+                </div>
+                <div id="machine">
+                  <Machine />
+                </div>
+                <div id="product">
+                  <Product />
+                </div>
+                <div id="about">
+                  <About />
+                </div>
+                <div id="contact">
+                  <Contact />
+                </div>
+                <div id="footer">
+                  <Footer />
+                </div>
+              </>
+            }
+          />
+          <Route path="/adminlogin" element={<AdminLogin />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+        </Routes>
+      </AnimatePresence>
+    </>
   );
-}
+};
 
 export default App;

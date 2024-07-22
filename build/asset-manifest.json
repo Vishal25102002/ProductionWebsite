@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0d79f0e7.css",
+    "main.js": "/static/js/main.7cf6a300.js",
+    "static/media/Bgheadervideo.mp4": "/static/media/Bgheadervideo.b133cfbd1798d5f41b82.mp4",
+    "static/media/fa-solid-900.ttf": "/static/media/fa-solid-900.07ed6d5fa32c1d54af0f.ttf",
+    "static/media/fa-brands-400.ttf": "/static/media/fa-brands-400.0ff70dcbf135d859ebf3.ttf",
+    "static/media/window.jpg": "/static/media/window.e7cbb40988c58f741dde.jpg",
+    "static/media/toughened_furnance.jpg": "/static/media/toughened_furnance.1b5c587aaf3887d7891c.jpg",
+    "static/media/fa-solid-900.woff2": "/static/media/fa-solid-900.93f719f4d62bfa3e748c.woff2",
+    "static/media/fa-brands-400.woff2": "/static/media/fa-brands-400.bb8d5a145e22822103fb.woff2",
+    "static/media/Prismatic-Tempered-Glass-3 1.png": "/static/media/Prismatic-Tempered-Glass-3 1.b41b6299c909c1e04a14.png",
+    "static/media/glassbuidling.jpg": "/static/media/glassbuidling.309491ccd39c7715b799.jpg",
+    "static/media/fa-regular-400.ttf": "/static/media/fa-regular-400.17a6e1aebccdbaa39e78.ttf",
+    "static/media/Logo.png": "/static/media/Logo.ba4276a28cf38cc1e280.png",
+    "static/media/fa-regular-400.woff2": "/static/media/fa-regular-400.bc3722686635b5f86132.woff2",
+    "static/media/fa-v4compatibility.ttf": "/static/media/fa-v4compatibility.0f6cb412603527bda691.ttf",
+    "static/media/fa-v4compatibility.woff2": "/static/media/fa-v4compatibility.6cfec8414be20e2c3426.woff2",
+    "index.html": "/index.html",
+    "main.0d79f0e7.css.map": "/static/css/main.0d79f0e7.css.map",
+    "main.7cf6a300.js.map": "/static/js/main.7cf6a300.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0d79f0e7.css",
+    "static/js/main.7cf6a300.js"
+  ]
+}
